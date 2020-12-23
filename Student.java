@@ -1,12 +1,10 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
     public class Student {
         String name;
-        ArrayList<Integer> grades;
-        Scanner s = new Scanner(System.in);
+        ArrayList<Integer> grades
 
         public Student(String name){
             this.name = name;
@@ -30,10 +28,11 @@ import java.util.Scanner;
         }
 
         //3
+       
         public Student another(Student other){
-            Student x = new Student(s.next());
-            if (x.studentAverage() > other.studentAverage()) {
-                return x;
+            
+           if (this.studentAverage() > other.studentAverage()) {
+              return this;
             } else {
                 return other;
             }
